@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>User Cards</title>
+  </head>
+
+  <body class="bg-zinc-950 min-h-screen text-white py-10">
+    <!-- Form -->
+    <div class="flex justify-center">
+      <form
+        id="userForm"
+        class="bg-zinc-900 p-8 rounded-2xl w-[450px] shadow-xl border border-zinc-800"
+        autocomplete="off"
+      >
+        <h2 class="text-3xl font-bold text-center mb-6">Add User</h2>
+
+        <div class="mb-4">
+          <label class="block mb-2 text-zinc-300"> Name </label>
+
+          <input
+            id="name"
+            type="text"
+            class="w-full px-4 py-2 bg-zinc-800 rounded-lg border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-zinc-500"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label class="block mb-2 text-zinc-300"> Role </label>
+
+          <input
+            id="role"
+            type="text"
+            class="w-full px-4 py-2 bg-zinc-800 rounded-lg border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-zinc-500"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label class="block mb-2 text-zinc-300"> Bio </label>
+
+          <textarea
+            id="bio"
+            rows="4"
+            class="w-full px-4 py-2 bg-zinc-800 rounded-lg border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-zinc-500"
+          ></textarea>
+        </div>
+
+        <div class="mb-6">
+          <label class="block mb-2 text-zinc-300"> Photo URL </label>
+
+          <input
+            id="photo"
+            type="text"
+            class="w-full px-4 py-2 bg-zinc-800 rounded-lg border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-zinc-500"
+          />
+        </div>
+
+        <button
+          class="w-full bg-zinc-800 hover:bg-zinc-700 py-3 rounded-lg transition"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <!-- Cards -->
+    <div
+      id="cardContainer"
+      class="flex flex-wrap justify-center gap-6 mt-10 px-6"
+    >
+      
+    </div>
+    <script src="UserCardsAdv.js"></script>
+  </body>
+</html>
