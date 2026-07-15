@@ -1,18 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Pattern</title>
     <style>
-        body{
-            background-color: black;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f4f4f4;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 20px;
+        background: #333;
+        color: white;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 20px auto;
+      }
+
+      .card {
+        background: white;
+        margin-bottom: 40px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+        opacity: 0;
+      }
+      .card img.loaded {
+        opacity: 1;
+      }
+
+      p {
+        margin-top: 10px;
+        line-height: 1.6;
+      }
     </style>
-</head>
-<body>
-    <input type="text" id="input" placeholder="Enter your text here">
-    <!-- <script src="Design.js"></script> -->
-    <script src="PerformanceOptimization.js"></script>
-</body>
-</html> 
+  </head>
+  <body>
+    <!-- PERFORMANCE OPTIMIZATION -->
+    <!-- <input type="text" id="input" placeholder="Enter your text here">
+    <script src="Design.js"></script> 
+    <script src="PerformanceOptimization.js"></script> -->
+
+    <!-- LAZY LOADING IMAGES -->
+    <h1>Lazy Loading Images Practice</h1>
+
+    <div class="container">
+      <div class="card">
+        <h2>Nature 1</h2>
+        <img data-src="https://picsum.photos/800/400?random=1" alt="Nature" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="card">
+        <h2>Nature 2</h2>
+        <img data-src="https://picsum.photos/800/400?random=2" alt="Nature" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="card">
+        <h2>Nature 3</h2>
+        <img data-src="https://picsum.photos/800/400?random=3" alt="Nature" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="card">
+        <h2>Nature 4</h2>
+        <img data-src="https://picsum.photos/800/400?random=4" alt="Nature" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="card">
+        <h2>Nature 5</h2>
+        <img data-src="https://picsum.photos/800/400?random=5" alt="Nature" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="card">
+        <h2>Nature 6</h2>
+        <img data-src="https://picsum.photos/800/400?random=6" alt="Nature" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="card">
+        <h2>Nature 7</h2>
+        <img data-src="https://picsum.photos/800/400?random=7" alt="Nature" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="card">
+        <h2>Nature 8</h2>
+        <img data-src="https://picsum.photos/800/400?random=8" alt="Nature" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <script src="Lazy.js"></script>
+  </body>
+</html>
